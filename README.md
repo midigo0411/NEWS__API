@@ -1,30 +1,40 @@
-##   News API
+# News api
 
-This project was generated with Python 3.8.
+## Built By [Elvis Midigo](https://github.com/midigo0411/news-api)
 
-##  Author:
+## Description
+News api is a web appication that helps to update people on what is happening
 
-Nancy Kemunto
+## User Stories
+These are the behaviours/features that the application implements for use by a user.
 
-##  Description:
+As a user I would like:
+* will be bale to view the news as per the interest
 
-It's an application that helps list and preview news articles from various sources
+## Specifications
+| Behaviour | Input | Output |
+| :---------------- | :---------------: | ------------------: |
+| click on the nesw as per the interest|
+| Display display the clicked Item | 
+| Navigate back to the previous page | 
 
-##  Setup/Installation
 
-* Clone the repository to your local directory in your computer
-* Install python3 in your computer
-* Run python3 in the terminal and get started
 
-##  Technologies Used
+## SetUp / Installation Requirements
+### Prerequisites
+* python3.6
+* pip
 
-Python
 
-##  Contacts
+### Cloning
+* In your terminal:
+        
+        $ git@github.com:midigo0411/news-api.git
+        $ cd News-api
 
-Email:nancykemuntosalome@gmail.com
-
-##  License
-
-This project is under the MIT license Copyright (c) 2021. Nancy Kemunto
-
+## Running the Application
+* install virtual env
+* install flask
+* install flask scrip
+## Testing the Application
+* python3.6 manage.py server
