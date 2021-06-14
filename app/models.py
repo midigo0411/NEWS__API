@@ -1,44 +1,35 @@
-class Movie:
-    '''
-    Movie class to define Movie Objects
-    '''
+class NewsArticle:
+        '''
+        News article class to define the newsArticle object 
+        '''
+        def __init__(self,author,description,time,url,image,title):
+                self.id = id
+                self.author = author
+                self.description = description
+                self.time = time
+                self.url = url
+                self.image = image
+                self.title = title
 
-    def __init__(self,id,title,overview,poster,vote_average,vote_count):
-        self.id =id
-        self.title = title
-        self.overview = overview
-        self.poster = "https://image.tmdb.org/t/p/w500/" + poster
-        self.vote_average = vote_average
-        self.vote_count = vote_count
+class NewsSource:
+        '''
+        News source class to define the newsSource object 
+        '''
+        def __init__(self,id,name,description,url):
+                self.id = id
+                self.name = name
+                self.description = description
+                self.url = url
 
+class Category:
+        '''
+        Class that instantiates objects of the news categories objects of the news sources
+        '''
+        def __init__(self,author,description,time,url,image,title):
+                self.author = author
+                self.description = description
+                self.time = time
+                self.url = url
+                self.image = image
+                self.title = title  
 
-
-class Review:
-
-    all_reviews = []
-
-    def __init__(self,movie_id,title,imageurl,review):
-        self.movie_id = movie_id
-        self.title = title
-        self.imageurl = imageurl
-        self.review = review
-
-
-    def save_review(self):
-        Review.all_reviews.append(self)
-
-
-    @classmethod
-    def clear_reviews(cls):
-        Review.all_reviews.clear()
-
-    @classmethod
-    def get_reviews(cls,id):
-
-        response = []
-
-        for review in cls.all_reviews:
-            if review.movie_id == id:
-                response.append(review)
-
-        return response

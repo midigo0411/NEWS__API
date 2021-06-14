@@ -1,4 +1,4 @@
- export MOVIE_API_KEY='84617bf244d602383a6b038d8c197442'
-export SECRET_KEY='pass123'
+export  NEWS_API_KEY='464cda0ee23b4cf08b72785cc77dbdcb'
+export SECRET_KEY='salome'
 
-python3.6 manage.py server
+python3 manage.py server
