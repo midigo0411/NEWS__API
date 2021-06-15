@@ -12,29 +12,30 @@
 <!-- Content block -->
 {% block content%}
 <div class="container">
-<div class="card-header banner">
-    <h1 style="text-align:center; color:blue;">News web</h1>
-    <P class="int" style="text-align:center; color: blue;">Be Updated with News</P>
+<div class="col-md-3">
+    <h1 style="text-align:center; color:black;">News web</h1>
+    <P class="int" style="text-align:center; color: black;">Be Updated with News</P>
 </div>
-    <div class="row">
+    <div class="col-md-9">
         <div class="column">
             <div class="card"></div>
-            <h2 style="color:blue; text-transform: uppercase;">Business</h2>
+            <h2 style="color: black; text-transform: uppercase;">Business</h2>
             {{ macro.displaySourceList(business)}}
         </div>
         <div class="column">
             <div class="card">
-            <h2 style="color:blue; text-transform:uppercase;"> Technology</h2>
+            <h2 style="color: black; text-transform:uppercase;"> Technology</h2>
             {{ macro.displaySourceList(technology)}}
             </div>
         </div>
-    </div>
+    
     <div class="row">
         <div class="column">
             <div class="card">
-            <h2 style="color:blue; text-transform:uppercase">Entertainment</h2>
+            <h2 style="color: black; text-transform:uppercase">Entertainment</h2>
             {{ macro.displaySourceList(entertainment)}}
            </div>
         </div>
+    </div>
 </div>
 {%endblock%}
